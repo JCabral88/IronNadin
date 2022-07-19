@@ -1,0 +1,38 @@
+LAB2
+
+1 - Create a new repository in the GitHub. Name it Iron+ your name. Example: if your name is Alvaro, you will name the repo IronAlvaro.
+https://github.com/JCabral88/IronJoao.git
+
+2 - Create a file in that folder. Name it about.txt and add a fun fact about yourself. (You can use the command line: touch nameOfTheFile.txt).
+$ touch aboutme.txt
+
+
+3 - Add the file you just created to the git.
+$ git add aboutme.txt
+
+$ git commit -m "created a new file"
+[master 9dd49e6] created a new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 aboutme.txt
+
+$ echo "My name is Joao, I am from the Azores and I have a super dog named Estrela" >> aboutme.txt
+
+$ git add aboutme.txt
+warning: LF will be replaced by CRLF in aboutme.txt.
+The file will have its original line endings in your working directory
+
+4 - Commit the changes.
+$ git commit -m "fact added"
+[master c59c0fe] fact added
+ 1 file changed, 1 insertion(+)
+
+5 - $ git push origin master
+
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 593 bytes | 593.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JCabral88/My-repo1.git
+   cf93d9a..c59c0fe  master -> master
